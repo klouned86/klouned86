@@ -1,5 +1,0 @@
-   
-      name Alexandr
-      surname Lapoukhov
-      animal 2
-      salary 3000$
