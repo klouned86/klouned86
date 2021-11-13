@@ -1,0 +1,342 @@
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ touch 1.json
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add 1.json
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -m "1.json"
+[main 01c670d] 1.json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.json
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 66.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+   3cfb981..01c670d  main -> main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ touch new2.json new2.xml new2.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ ls -la
+total 9
+drwxr-xr-x 1 klouned86 197121   0 Nov  3 00:46 ./
+drwxr-xr-x 1 klouned86 197121   0 Oct 31 20:24 ../
+drwxr-xr-x 1 klouned86 197121   0 Nov  3 00:43 .git/
+-rw-r--r-- 1 klouned86 197121   0 Nov  3 00:41 1.json
+-rw-r--r-- 1 klouned86 197121 461 Oct 31 20:25 README.md
+-rw-r--r-- 1 klouned86 197121   0 Nov  3 00:46 new2.json
+-rw-r--r-- 1 klouned86 197121   0 Nov  3 00:46 new2.txt
+-rw-r--r-- 1 klouned86 197121   0 Nov  3 00:46 new2.xml
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new2.json
+        new2.txt
+        new2.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add new2.json new2.xml new2.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new2.json
+        new file:   new2.txt
+        new file:   new2.xml
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -m "new2.json new2.xml new2.txt"
+[main b2f921e] new2.json new2.xml new2.txt
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new2.json
+ create mode 100644 new2.txt
+ create mode 100644 new2.xml
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 290 bytes | 145.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+   01c670d..b2f921e  main -> main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ nano new2.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -am new2.txt "homework_14"
+fatal: paths 'homework_14 ...' with -a does not make sense
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new2.json
+        modified:   new2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -am
+error: switch `m' requires a value
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -am "new2.txt new2.json"
+warning: LF will be replaced by CRLF in new2.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in new2.txt.
+The file will have its original line endings in your working directory
+[main fcb3e86] new2.txt new2.json
+ 2 files changed, 11 insertions(+)
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+fatal: unable to access 'https://github.com/klouned86/klouned86.git/': Could not resolve host: github.com
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 489 bytes | 13.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+   b2f921e..fcb3e86  main -> main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ nano new2.xml
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -am"new2.xml"
+warning: LF will be replaced by CRLF in new2.xml.
+The file will have its original line endings in your working directory
+[main e212401] new2.xml
+ 1 file changed, 7 insertions(+)
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 325 bytes | 108.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/klouned86/klouned86.git
+   fcb3e86..e212401  main -> main
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d
+$  cp Git_Bash.txt /d/git_repo/klouned86/Git_Bash.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d
+$ cd klouned86
+bash: cd: klouned86: No such file or directory
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d
+$ cd git_repo
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo
+$ cd klouned86
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ pwd
+/d/git_repo/klouned86
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ ls -la
+total 24
+drwxr-xr-x 1 klouned86 197121    0 Nov  3 04:59 ./
+drwxr-xr-x 1 klouned86 197121    0 Oct 31 20:24 ../
+drwxr-xr-x 1 klouned86 197121    0 Nov  3 03:48 .git/
+-rw-r--r-- 1 klouned86 197121    0 Nov  3 00:41 1.json
+-rw-r--r-- 1 klouned86 197121 9468 Nov  3 04:59 Git_Bash.txt
+-rw-r--r-- 1 klouned86 197121  461 Oct 31 20:25 README.md
+-rw-r--r-- 1 klouned86 197121  102 Nov  3 01:07 new2.json
+-rw-r--r-- 1 klouned86 197121   82 Nov  3 00:55 new2.txt
+-rw-r--r-- 1 klouned86 197121  100 Nov  3 03:47 new2.xml
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git_Bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -am"git_bash-homework"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git_Bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git_Bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add Git_Bash.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit
+hint: Waiting for your editor to close the file...
+Aborting commit due to empty commit message.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit -m"git_bash-homework"
+[main 53cde94] git_bash-homework
+ 1 file changed, 134 insertions(+)
+ create mode 100644 Git_Bash.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.89 KiB | 740.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/klouned86/klouned86.git
+   e212401..53cde94  main -> main
+24) klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 796 bytes | 0 bytes/s, done.
+From https://github.com/klouned86/klouned86
+   53cde94..5025dd7  main       -> origin/main
+Updating 53cde94..5025dd7
+Fast-forward
+ new3.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 new3.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ ls -la
+total 25
+drwxr-xr-x 1 klouned86 197121    0 Nov  3 11:29 ./
+drwxr-xr-x 1 klouned86 197121    0 Oct 31 20:24 ../
+drwxr-xr-x 1 klouned86 197121    0 Nov  3 11:29 .git/
+-rw-r--r-- 1 klouned86 197121    0 Nov  3 00:41 1.json
+-rw-r--r-- 1 klouned86 197121 9468 Nov  3 04:59 Git_Bash.txt
+-rw-r--r-- 1 klouned86 197121  461 Oct 31 20:25 README.md
+-rw-r--r-- 1 klouned86 197121  102 Nov  3 01:07 new2.json
+-rw-r--r-- 1 klouned86 197121   82 Nov  3 00:55 new2.txt
+-rw-r--r-- 1 klouned86 197121  100 Nov  3 03:47 new2.xml
+-rw-r--r-- 1 klouned86 197121  227 Nov  3 11:29 new3.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 833 bytes | 4.00 KiB/s, done.
+From https://github.com/klouned86/klouned86
+   5025dd7..b0058b8  main       -> origin/main
+Updating 5025dd7..b0058b8
+Fast-forward
+ new2.json | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 838 bytes | 4.00 KiB/s, done.
+From https://github.com/klouned86/klouned86
+   b0058b8..afa8748  main       -> origin/main
+Updating b0058b8..afa8748
+Fast-forward
+ new2.xml | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+

@@ -1,0 +1,311 @@
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Postman Jmeter
+fatal: Not a valid object name: 'Jmeter'.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Postman
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch
+  Postman
+* main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Jmeter
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch CheckLists
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Bug_Reports
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch SQL
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Charles
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Mobile testing
+fatal: Not a valid object name: 'testing'.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch Mobile_testing
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch
+  Bag_Reports
+  Charles
+  CheckLists
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git puch
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Everything up-to-date
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push origin --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+ * [new branch]      Bag_Reports -> Bag_Reports
+ * [new branch]      Charles -> Charles
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      Mobile_testing -> Mobile_testing
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git checkout Bag_Reports
+Switched to branch 'Bag_Reports'
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ pwd
+/d/git_repo/klouned86
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git branch
+* Bag_Reports
+  Charles
+  CheckLists
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+  main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ touch BR.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ ls -la
+total 9
+drwxr-xr-x 1 klouned86 197121   0 Nov  7 11:50 ./
+drwxr-xr-x 1 klouned86 197121   0 Oct 31 20:24 ../
+drwxr-xr-x 1 klouned86 197121   0 Nov  7 11:49 .git/
+-rw-r--r-- 1 klouned86 197121   0 Nov  7 11:50 BR.txt
+-rw-r--r-- 1 klouned86 197121 461 Oct 31 20:25 README.md
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ nano BR.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ nano BR.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ nano BR.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git add BR.txt
+warning: LF will be replaced by CRLF in BR.txt.
+The file will have its original line endings in your working directory
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git commit .
+warning: LF will be replaced by CRLF in BR.txt.
+The file will have its original line endings in your working directory
+Aborting commit due to empty commit message.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git status
+On branch Bag_Reports
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   BR.txt
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git push
+fatal: The current branch Bag_Reports has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Bag_Reports
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git push --set-upstream origin Bag_Reports
+Everything up-to-date
+Branch 'Bag_Reports' set up to track remote branch 'Bag_Reports' from 'origin'.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git status
+On branch Bag_Reports
+Your branch is up to date with 'origin/Bag_Reports'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   BR.txt
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git commit -m BR.txt
+[Bag_Reports 280587c] BR.txt
+ 1 file changed, 11 insertions(+)
+ create mode 100644 BR.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 501 bytes | 33.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+   975c3b2..280587c  Bag_Reports -> Bag_Reports
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git branch
+  Bag_Reports
+  Charles
+  CheckLists
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git merge BR.txt
+merge: BR.txt - not something we can merge
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git merge Bag_Reports
+Updating 975c3b2..280587c
+Fast-forward
+ BR.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 BR.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git commit
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+   975c3b2..280587c  main -> main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
+$ git checkout CheckLists
+Switched to branch 'CheckLists'
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git branch
+  Bag_Reports
+  Charles
+* CheckLists
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+  main
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ touch CL.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ nano CL.txt
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git add CL.txt
+warning: LF will be replaced by CRLF in CL.txt.
+The file will have its original line endings in your working directory
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git status
+On branch CheckLists
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   CL.txt
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git commit CL.txt
+warning: LF will be replaced by CRLF in CL.txt.
+The file will have its original line endings in your working directory
+Aborting commit due to empty commit message.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git commit -m"CL"
+[CheckLists 1580d70] CL
+ 1 file changed, 219 insertions(+)
+ create mode 100644 CL.txt
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git push
+fatal: The current branch CheckLists has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin CheckLists
+
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git push --set-upstream origin CheckLists
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.60 KiB | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/klouned86/klouned86.git
+   975c3b2..1580d70  CheckLists -> CheckLists
+Branch 'CheckLists' set up to track remote branch 'CheckLists' from 'origin'.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 721 bytes | 5.00 KiB/s, done.
+From https://github.com/klouned86/klouned86
+   280587c..5375483  main       -> origin/main
+Already up to date.
+
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
+$
