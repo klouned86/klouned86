@@ -34,7 +34,7 @@ $ git branch Mobile_testing
 
 klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
 $ git branch
-  Bag_Reports
+  Bug_Reports
   Charles
   CheckLists
   Jmeter
@@ -65,7 +65,7 @@ klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
 $ git push origin --all
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/klouned86/klouned86.git
- * [new branch]      Bag_Reports -> Bag_Reports
+ * [new branch]      Bug_Reports -> Bug_Reports
  * [new branch]      Charles -> Charles
  * [new branch]      CheckLists -> CheckLists
  * [new branch]      Jmeter -> Jmeter
@@ -74,16 +74,16 @@ To https://github.com/klouned86/klouned86.git
  * [new branch]      SQL -> SQL
 
 klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
-$ git checkout Bag_Reports
-Switched to branch 'Bag_Reports'
+$ git checkout Bug_Reports
+Switched to branch 'Bug_Reports'
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ pwd
 /d/git_repo/klouned86
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git branch
-* Bag_Reports
+* Bug_Reports
   Charles
   CheckLists
   Jmeter
@@ -92,10 +92,10 @@ $ git branch
   SQL
   main
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ touch BR.txt
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ ls -la
 total 9
 drwxr-xr-x 1 klouned86 197121   0 Nov  7 11:50 ./
@@ -104,64 +104,64 @@ drwxr-xr-x 1 klouned86 197121   0 Nov  7 11:49 .git/
 -rw-r--r-- 1 klouned86 197121   0 Nov  7 11:50 BR.txt
 -rw-r--r-- 1 klouned86 197121 461 Oct 31 20:25 README.md
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ nano BR.txt
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ nano BR.txt
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ nano BR.txt
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git add BR.txt
 warning: LF will be replaced by CRLF in BR.txt.
 The file will have its original line endings in your working directory
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git commit .
 warning: LF will be replaced by CRLF in BR.txt.
 The file will have its original line endings in your working directory
 Aborting commit due to empty commit message.
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git status
-On branch Bag_Reports
+On branch Bug_Reports
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   BR.txt
 
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git push
-fatal: The current branch Bag_Reports has no upstream branch.
+fatal: The current branch Bug_Reports has no upstream branch.
 To push the current branch and set the remote as upstream, use
 
-    git push --set-upstream origin Bag_Reports
+    git push --set-upstream origin Bug_Reports
 
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
-$ git push --set-upstream origin Bag_Reports
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
+$ git push --set-upstream origin Bug_Reports
 Everything up-to-date
-Branch 'Bag_Reports' set up to track remote branch 'Bag_Reports' from 'origin'.
+Branch 'Bug_Reports' set up to track remote branch 'Bug_Reports' from 'origin'.
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git status
-On branch Bag_Reports
-Your branch is up to date with 'origin/Bag_Reports'.
+On branch Bug_Reports
+Your branch is up to date with 'origin/Bug_Reports'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   BR.txt
 
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git commit -m BR.txt
-[Bag_Reports 280587c] BR.txt
+[Bug_Reports 280587c] BR.txt
  1 file changed, 11 insertions(+)
  create mode 100644 BR.txt
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git push
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -170,16 +170,16 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 501 bytes | 33.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/klouned86/klouned86.git
-   975c3b2..280587c  Bag_Reports -> Bag_Reports
+   975c3b2..280587c  Bug_Reports -> Bug_Reports
 
-klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bag_Reports)
+klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (Bug_Reports)
 $ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
 klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
 $ git branch
-  Bag_Reports
+  Bug_Reports
   Charles
   CheckLists
   Jmeter
@@ -193,7 +193,7 @@ $ git merge BR.txt
 merge: BR.txt - not something we can merge
 
 klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (main)
-$ git merge Bag_Reports
+$ git merge Bug_Reports
 Updating 975c3b2..280587c
 Fast-forward
  BR.txt | 11 +++++++++++
@@ -235,7 +235,7 @@ Switched to branch 'CheckLists'
 
 klouned86@DESKTOP-4GPQIMQ MINGW64 /d/git_repo/klouned86 (CheckLists)
 $ git branch
-  Bag_Reports
+  Bug_Reports
   Charles
 * CheckLists
   Jmeter
