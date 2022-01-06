@@ -294,6 +294,7 @@
 							"\r",
 							"\r",
 							"\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -529,7 +530,7 @@
 							"});\r",
 							"\r",
 							"//age из реквеста\r",
-							"let age35 = request.data.age;\r",
+							"//let age35 = request.data.age;\r",
 							"\r",
 							"//сравниваем со значением в респонсе\r",
 							"pm.test(\"age=age\", function () {\r",
